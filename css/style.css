@@ -53,3 +53,25 @@ body {
     --color-E3E3E3 : #E3E3E3;
     --color-F1F1F1 : #F1F1F1;
 }
+
+.main_header {
+    margin-top: 1rem;
+}
+
+.container_site {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.navgation {
+    display: grid;
+    grid-template-columns: 58px 510px 187px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navgation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
