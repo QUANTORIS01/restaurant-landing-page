@@ -58,6 +58,10 @@ a {
     src: url('../fonts/poppins/poppins-light-webfont.woff') format('woff');
 }
 
+img {
+    width: 100%;
+}
+
 :root {
     --color_fff: #fff;
     --color-C90000: #C90000;
@@ -69,6 +73,7 @@ a {
     --color-E3E3E3: #E3E3E3;
     --color-F1F1F1: #F1F1F1;
     --color-rgba-241: rgba(241, 241, 241, 0.70);
+    --color-rgba-241-040: rgba(241, 241, 241, 0.40);
     --color-rgba-112-144-176: rgba(112, 144, 176, 0.20);
 }
 
@@ -162,6 +167,7 @@ a {
 
 .content_left_header_bottom {
     align-self: center;
+    width: 86%;
 }
 
 .content_left_header_bottom h1 {
@@ -263,6 +269,40 @@ a {
     margin-right: 5px;
     margin-top: -3px;
 }
+
+.content_right_header_bottom {
+    position: relative;
+}
+
+.fixed_box_delivery {
+    position: absolute;
+    top: 5rem;
+    left: -6rem;
+    border-radius: 50px 50px 0 50px;
+    border: 1px solid var(--color-F1F1F1);
+    background-color: var(--color-rgba-241-040);
+    padding: 12px;
+    text-align: center;
+}
+
+.fixed_box_delivery div {
+    display: flex;
+    align-items: center;
+}
+
+.fixed_box_delivery > span {
+    color: var(--color-7D7C7C);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fixed_box_delivery div span {
+    color: var(--color-323232);
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
 
 @media (max-width:834px) {
     .navgation {
