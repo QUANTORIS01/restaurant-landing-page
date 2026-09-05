@@ -311,6 +311,23 @@ img {
     margin-left: 5px;
 }
 
+.row_title_section_food h4 {
+    color: var(--color_C90000);
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.line_bottom_row_title {
+    width: 137px;
+    height: 9px;
+    background-color: var(--color_FFF6A3);
+    position: absolute;
+    top: 35px;
+    z-index: -1;
+}
+
 @media (max-width:1042px) {
     .action_order {
         max-width: 100%;
