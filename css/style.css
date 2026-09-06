@@ -355,7 +355,71 @@ img {
     background-color: var(--color_FFC300) !important;
     color: var(--color_323232) !important;
     font-weight: 600 !important;
+}
 
+.row_grid_food_products {
+    margin-top: 32px;
+}
+
+.item_food_grid {
+    width: 300px;
+    border: 1px solid var(--color_E3E3E3);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.img_item_food_grid {
+    position: relative;
+}
+
+.img_item_food_grid div {
+    height: 105px;
+    background-color: var(--color_FFFDE6);
+    border-radius: 12px;
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    z-index: -1;
+}
+
+.info_item_food_grid {
+    margin-top: 18px;
+}
+
+.info_item_food_grid h5 {
+    font-size: 20px;
+    color: var(--color_323232);
+    font-weight: 600;
+}
+
+.info_item_food_grid p {
+    font-size: 14px;
+    color: var(--color_504F4F);
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.score_item_food_grid {
+    margin: 12px 0 20px 0;
+}
+
+.bottom_item_food_grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom_item_food_grid span {
+    color: var(--color_323232);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bottom_item_food_grid button {
+    background-color: var(--color_C90000);
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
 }
 
 @media (max-width:1042px) {
