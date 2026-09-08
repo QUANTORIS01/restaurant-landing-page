@@ -461,13 +461,46 @@ img {
     justify-content: center;
 }
 
+.grid_foods_off {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 30px;
+    margin-top: 1.8rem;
+}
+
 .item_food_off {
-    width: 370px;
     border: 1px solid var(--color_E3E3E3);
     background-color: var(--color_F1F1F1);
     border-radius: 20px;
     padding: 2rem 0 2rem 1.2rem;
     overflow: hidden;
+    transition: all 250ms ease-in;
+    cursor: pointer;
+}
+
+.item_food_off:hover {
+    background-color: var(--color_C90000);
+    transform: scale(1.1);
+}
+
+.item_food_off:hover .title_sm_item_food_off span:first-child,
+.item_food_off:hover .left_item_food_off p,
+.item_food_off:hover .price_off del {
+    color: var(--color_fff);
+}
+
+.item_food_off:hover .left_item_food_off h6,
+.item_food_off:hover .price_off span {
+    color: var(--color_FFC300);
+}
+
+.item_food_off:hover .left_item_food_off button {
+    color: var(--color_323232);
+    background-color: var(--color_fff);
+}
+
+.item_food_off:hover .left_item_food_off button svg path {
+    fill: var(--color_323232);
 }
 
 .title_sm_item_food_off {
@@ -480,6 +513,7 @@ img {
     color: var(--color_323232);
     font-size: 16px;
     font-weight: 400;
+    transition: all 250ms ease-in;
 }
 
 .title_sm_item_food_off span:last-child {
@@ -503,6 +537,8 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     margin: 0.9rem 0;
+    white-space: nowrap;
+    transition: all 250ms ease-in;
 }
 
 .left_item_food_off p {
@@ -510,12 +546,15 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    height: 44px;
+    transition: all 250ms ease-in;
 }
 
 .price_off del {
     color: var(--color_7D7C7C);
     font-size: 16px;
     font-weight: 600;
+    transition: all 250ms ease-in;
 }
 
 .price_off span {
@@ -524,6 +563,7 @@ img {
     font-weight: 600;
     margin-top: 0.5rem;
     display: inline-block;
+    transition: all 250ms ease-in;
 }
 
 .left_item_food_off button {
@@ -539,6 +579,7 @@ img {
     padding: 8px 12px;
     border: none;
     margin-top: 4.5rem;
+    transition: all 250ms ease-in;
 }
 
 .left_item_food_off button span {
@@ -547,9 +588,16 @@ img {
 }
 
 .right_item_food_off img {
-    transform: scale(2);
     position: relative;
     top: 25%;
+    right: 30%;
+    max-width: 273px;
+    max-height: 204px;
+    width: 273px;
+}
+
+.seconde_item_food_off .right_item_food_off img {
+    right: 55%;
 }
 
 
