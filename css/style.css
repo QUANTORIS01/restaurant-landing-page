@@ -600,6 +600,33 @@ img {
     right: 55%;
 }
 
+.section_mobile_app {
+    border: 1px solid var(--color_E3E3E3);
+    background-color: var(--color_F1F1F1);
+    border-radius: 0 500px 500px 0;
+    max-width: 80%;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 30% 65%;
+}
+
+.img_section_mobile_app img {
+    transform: scale(1.2);
+    position: relative;
+    top: -25px;
+}
+
+.content_section_mobile_app {
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.download_btn_app a {
+    width: 9%;
+    display: inline-block;
+}
+
 
 @media (max-width:1042px) {
     .action_order {
