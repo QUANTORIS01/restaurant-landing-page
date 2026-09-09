@@ -738,6 +738,10 @@ img {
     .action_order {
         max-width: 100%;
     }
+
+    .section_search_location img {
+        max-width: 105px;
+    }
 }
 
 @media (max-width:999px) {
@@ -761,6 +765,10 @@ img {
 
     .content_section_mobile_app p {
         font-size: 15px;
+    }
+
+    .content_search_location h6 {
+        font-size: 32px;
     }
 }
 
@@ -825,6 +833,14 @@ img {
 
     .fixed_box_delivery div span {
         font-size: 19px;
+    }
+
+    .content_search_location form {
+        width: 93%;
+    }
+
+    .section_search_location img {
+        max-width: 74px;
     }
 }
 
@@ -898,11 +914,39 @@ img {
         max-width: 100%;
     }
 
+    .content_search_location h6 {
+        font-size: 25px;
+    }
 
+    .content_search_location p {
+        font-size: 13px;
+    }
 }
 
 @media (min-width:677px) {
     .order_food_mobile {
         display: none;
+    }
+}
+
+@media (max-width:550px) {
+    .content_search_location {
+        text-align: center;
+    }
+
+    .content_search_location form {
+        height: 49px;
+    }
+
+    .content_search_location form input {
+        font-size: 13px;
+    }
+
+    .content_search_location form button {
+        top: 11%;
+    }
+
+    .section_search_location img:nth-child(4) {
+        top: 7%;
     }
 }
